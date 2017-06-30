@@ -152,7 +152,7 @@ export default {
   },
   mounted(){
     this.$nextTick(()=>{
-      axios.get('/data/address.json').then((res)=>{
+      axios.get('/static/address.json').then((res)=>{
         this.address = res.data.data.result;
       })
     })

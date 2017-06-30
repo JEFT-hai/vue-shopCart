@@ -212,7 +212,7 @@ export default {
           this.delFlag = true;
         },
         cartView() {
-            axios.get('/data/data.json').then(res => { //作用域指向了外层 里面的this就是外面的this
+            axios.get('/static/data.json').then(res => { //作用域指向了外层 里面的this就是外面的this
                 this.productList = res.data.data.result.list;
                 // _this.productList = res.body.result.totalMoney;
             }); // 调用http方法
